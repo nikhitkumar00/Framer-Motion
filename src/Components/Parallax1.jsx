@@ -95,7 +95,7 @@ function Parallax1() {
         <motion.div
           style={{
             backgroundPosition: "bottom",
-            backgroundSize: "contain",
+            backgroundSize: "cover",
             y: man,
           }}
           className="absolute inset-0 z-[9] w-full bg-man bg-no-repeat"
