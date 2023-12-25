@@ -1,9 +1,11 @@
+import Parallax1 from "./Components/Parallax1";
+
 function App() {
-	return (
-		<>
-			<h1>App</h1>
-		</>
-	);
+  return (
+    <div>
+      <Parallax1 />
+    </div>
+  );
 }
 
 export default App;
