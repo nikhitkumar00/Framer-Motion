@@ -8,18 +8,18 @@ function Parallax1() {
     offset: ["start start", "end start"],
   });
 
-  const background = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  const mountain = useTransform(scrollYProgress, [0, 1], ["0%", "90%"]);
-  const jungle1 = useTransform(scrollYProgress, [0, 1], ["0%", "80%"]);
-  const jungle2 = useTransform(scrollYProgress, [0, 1], ["0%", "60%"]);
-  const jungle3 = useTransform(scrollYProgress, [0, 1], ["0%", "40%"]);
-  const jungle4 = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  const background = useTransform(scrollYProgress, [0, 1], ["-30%", "100%"]);
+  const mountain = useTransform(scrollYProgress, [0, 1], ["-25%", "95%"]);
+  const jungle1 = useTransform(scrollYProgress, [0, 1], ["-20%", "90%"]);
+  const jungle2 = useTransform(scrollYProgress, [0, 1], ["-15%", "85%"]);
+  const jungle3 = useTransform(scrollYProgress, [0, 1], ["-10%", "80%"]);
+  const jungle4 = useTransform(scrollYProgress, [0, 1], ["-5%", "20%"]);
   const jungle5 = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
   const man = useTransform(scrollYProgress, [0, 1], ["5%", "0%"]);
 
   return (
     <div ref={refference} className="bg-[#FFAF1B]">
-      <div className="bold flex h-20 w-full flex-col items-center justify-center gap-4 bg-[#FFAF1B] text-4xl text-[#DE711D]  md:h-60 md:text-6xl">
+      <div className="bold flex h-screen w-full flex-col items-center justify-center gap-4 bg-[#FFAF1B] text-4xl text-[#DE711D]  md:h-60 md:text-6xl">
         <span>SCROLL</span>
         <svg
           className="w-10 animate-bounce fill-[#DE711D]"
@@ -42,7 +42,7 @@ function Parallax1() {
             backgroundPosition: "bottom",
             backgroundSize: "cover",
           }}
-          className="bg-background absolute inset-0 z-[1] h-screen w-full bg-no-repeat"
+          className="absolute inset-0 z-[1] h-screen w-full bg-background bg-no-repeat"
         ></motion.div>
         <motion.div
           style={{
