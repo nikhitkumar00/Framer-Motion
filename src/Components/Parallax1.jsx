@@ -8,14 +8,14 @@ function Parallax1() {
     offset: ["start start", "end start"],
   });
 
-  const background = useTransform(scrollYProgress, [0, 1], ["-10%", "100%"]);
-  const mountain = useTransform(scrollYProgress, [0, 1], ["-5%", "95%"]);
-  const jungle1 = useTransform(scrollYProgress, [0, 1], ["0%", "90%"]);
-  const jungle2 = useTransform(scrollYProgress, [0, 1], ["5%", "85%"]);
-  const jungle3 = useTransform(scrollYProgress, [0, 1], ["10%", "80%"]);
-  const jungle4 = useTransform(scrollYProgress, [0, 1], ["15%", "20%"]);
-  const jungle5 = useTransform(scrollYProgress, [0, 1], ["20%", "10%"]);
-  const man = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
+  const background = useTransform(scrollYProgress, [0, 1], ["-30%", "110%"]);
+  const mountain = useTransform(scrollYProgress, [0, 1], ["-25%", "105%"]);
+  const jungle1 = useTransform(scrollYProgress, [0, 1], ["-20%", "90%"]);
+  const jungle2 = useTransform(scrollYProgress, [0, 1], ["-15%", "85%"]);
+  const jungle3 = useTransform(scrollYProgress, [0, 1], ["-10%", "80%"]);
+  const jungle4 = useTransform(scrollYProgress, [0, 1], ["-5%", "20%"]);
+  const jungle5 = useTransform(scrollYProgress, [0, 1], ["0%", "0%"]);
+  const man = useTransform(scrollYProgress, [0, 1], ["5%", "25%"]);
 
   return (
     <div ref={refference} className="bg-[#FFAF1B]">
