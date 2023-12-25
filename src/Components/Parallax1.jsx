@@ -15,7 +15,7 @@ function Parallax1() {
   const jungle3 = useTransform(scrollYProgress, [0, 1], ["10%", "80%"]);
   const jungle4 = useTransform(scrollYProgress, [0, 1], ["15%", "20%"]);
   const jungle5 = useTransform(scrollYProgress, [0, 1], ["20%", "10%"]);
-  const man = useTransform(scrollYProgress, [0, 1], ["5%", "5%"]);
+  const man = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
 
   return (
     <div ref={refference} className="bg-[#FFAF1B]">
@@ -95,7 +95,7 @@ function Parallax1() {
         <motion.div
           style={{
             backgroundPosition: "bottom",
-            backgroundSize: "cover",
+            backgroundSize: "contain",
             y: man,
           }}
           className="absolute inset-0 z-[9] w-full bg-man bg-no-repeat"
