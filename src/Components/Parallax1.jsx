@@ -41,6 +41,7 @@ function Parallax1() {
             y: background,
             backgroundPosition: "bottom",
             backgroundSize: "cover",
+            willChange: "transform",
           }}
           className="absolute inset-0 z-[1] h-screen w-full bg-background bg-no-repeat"
         ></motion.div>
@@ -49,6 +50,7 @@ function Parallax1() {
             y: mountain,
             backgroundPosition: "bottom",
             backgroundSize: "cover",
+            willChange: "transform",
           }}
           className="absolute inset-0 z-[3] w-full bg-mountain bg-no-repeat"
         ></motion.div>
@@ -57,6 +59,7 @@ function Parallax1() {
             y: jungle1,
             backgroundPosition: "bottom",
             backgroundSize: "cover",
+            willChange: "transform",
           }}
           className="absolute inset-0 z-[4] h-screen w-full bg-jungle1 bg-no-repeat"
         ></motion.div>
@@ -65,6 +68,7 @@ function Parallax1() {
             y: jungle2,
             backgroundPosition: "bottom",
             backgroundSize: "cover",
+            willChange: "transform",
           }}
           className="absolute inset-0 z-[5] w-full bg-jungle2 bg-no-repeat"
         ></motion.div>
@@ -73,6 +77,7 @@ function Parallax1() {
             y: jungle3,
             backgroundPosition: "bottom",
             backgroundSize: "cover",
+            willChange: "transform",
           }}
           className="absolute inset-0 z-[6] w-full bg-jungle3 bg-no-repeat"
         ></motion.div>
@@ -81,6 +86,7 @@ function Parallax1() {
             y: jungle4,
             backgroundPosition: "bottom",
             backgroundSize: "cover",
+            willChange: "transform",
           }}
           className="absolute inset-0 z-[7] w-full bg-jungle4 bg-no-repeat"
         ></motion.div>
@@ -89,6 +95,7 @@ function Parallax1() {
             y: jungle5,
             backgroundPosition: "bottom",
             backgroundSize: "cover",
+            willChange: "transform",
           }}
           className="absolute inset-0 z-[8] w-full bg-jungle5 bg-no-repeat"
         ></motion.div>
@@ -97,6 +104,7 @@ function Parallax1() {
             backgroundPosition: "bottom",
             backgroundSize: "cover",
             y: man,
+            willChange: "transform",
           }}
           className="absolute inset-0 z-[9] w-full bg-man bg-no-repeat"
         ></motion.div>
