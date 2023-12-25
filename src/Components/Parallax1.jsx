@@ -8,18 +8,18 @@ function Parallax1() {
     offset: ["start start", "end start"],
   });
 
-  const background = useTransform(scrollYProgress, [0, 1], ["-30%", "110%"]);
-  const mountain = useTransform(scrollYProgress, [0, 1], ["-25%", "105%"]);
+  const background = useTransform(scrollYProgress, [0, 1], ["-28%", "110%"]);
+  const mountain = useTransform(scrollYProgress, [0, 1], ["-22%", "105%"]);
   const jungle1 = useTransform(scrollYProgress, [0, 1], ["-20%", "90%"]);
-  const jungle2 = useTransform(scrollYProgress, [0, 1], ["-15%", "85%"]);
-  const jungle3 = useTransform(scrollYProgress, [0, 1], ["-10%", "80%"]);
-  const jungle4 = useTransform(scrollYProgress, [0, 1], ["-5%", "20%"]);
-  const jungle5 = useTransform(scrollYProgress, [0, 1], ["0%", "0%"]);
+  const jungle2 = useTransform(scrollYProgress, [0, 1], ["-18%", "85%"]);
+  const jungle3 = useTransform(scrollYProgress, [0, 1], ["-12%", "80%"]);
+  const jungle4 = useTransform(scrollYProgress, [0, 1], ["-9%", "20%"]);
+  const jungle5 = useTransform(scrollYProgress, [0, 1], ["-3%", "35%"]);
   const man = useTransform(scrollYProgress, [0, 1], ["5%", "25%"]);
 
   return (
     <div ref={refference} className="bg-[#FFAF1B]">
-      <div className="bold flex h-[10vh] w-full flex-col items-center justify-center gap-4 bg-[#FFAF1B] text-4xl text-[#DE711D]  md:h-60 md:text-6xl">
+      <div className="relative z-[2] bold flex h-[10vh] w-full flex-col items-center justify-center gap-4 text-4xl text-[#DE711D]  md:h-60 md:text-6xl">
         <span>SCROLL</span>
         <svg
           className="w-10 animate-bounce fill-[#DE711D]"
