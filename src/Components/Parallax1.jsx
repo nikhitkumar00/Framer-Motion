@@ -8,15 +8,15 @@ function Parallax1() {
     offset: ["start start", "end start"],
   });
 
-  const background = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  const jungle1 = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
-  const jungle2 = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  const jungle3 = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  const jungle4 = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  const jungle5 = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  const man = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  const mountain = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  const logo = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const background = useTransform(scrollYProgress, [0, 1], ["0%", "80%"]);
+  const logo = useTransform(scrollYProgress, [0, 1], ["0%", "70%"]);
+  const mountain = useTransform(scrollYProgress, [0, 1], ["0%", "60%"]);
+  const jungle1 = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+  const jungle2 = useTransform(scrollYProgress, [0, 1], ["0%", "40%"]);
+  const jungle3 = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  const jungle4 = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
+  const jungle5 = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
+  const man = useTransform(scrollYProgress, [0, 1], ["0%", "0%"]);
 
   return (
     <div className="relative h-screen w-full" ref={refference}>
