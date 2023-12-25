@@ -10,11 +10,11 @@ function Parallax1() {
 
   const background = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
   const mountain = useTransform(scrollYProgress, [0, 1], ["0%", "78%"]);
-  const jungle1 = useTransform(scrollYProgress, [0, 1], ["0%", "65%"]);
-  const jungle2 = useTransform(scrollYProgress, [0, 1], ["0%", "52%"]);
-  const jungle3 = useTransform(scrollYProgress, [0, 1], ["0%", "39%"]);
-  const jungle4 = useTransform(scrollYProgress, [0, 1], ["0%", "26%"]);
-  const jungle5 = useTransform(scrollYProgress, [0, 1], ["0%", "13%"]);
+  const jungle1 = useTransform(scrollYProgress, [0, 1], ["0%", "69%"]);
+  const jungle2 = useTransform(scrollYProgress, [0, 1], ["0%", "55%"]);
+  const jungle3 = useTransform(scrollYProgress, [0, 1], ["0%", "35%"]);
+  const jungle4 = useTransform(scrollYProgress, [0, 1], ["0%", "29%"]);
+  const jungle5 = useTransform(scrollYProgress, [0, 1], ["0%", "23%"]);
   const man = useTransform(scrollYProgress, [0, 1], ["0%", "0%"]);
 
   return (
@@ -25,7 +25,7 @@ function Parallax1() {
           className="w-10 animate-bounce fill-[#DE711D]"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xlink="http://www.w3.org/1999/xlink"
         >
           <g transform="matrix(0.83 0 0 0.83 12 12)">
             <path
@@ -39,74 +39,66 @@ function Parallax1() {
         <motion.div
           style={{
             y: background,
-            backgroundImage: 'url("./src/assets/background.png")',
             backgroundPosition: "bottom",
             backgroundSize: "cover",
           }}
-          className="absolute inset-0 z-[1] h-screen w-full"
+          className="bg-background absolute inset-0 z-[1] h-screen w-full bg-no-repeat"
         ></motion.div>
         <motion.div
           style={{
             y: mountain,
-            backgroundImage: 'url("./src/assets/mountains.png")',
             backgroundPosition: "bottom",
             backgroundSize: "cover",
           }}
-          className="absolute inset-0 z-[3] w-full"
+          className="absolute inset-0 z-[3] w-full bg-mountain bg-no-repeat"
         ></motion.div>
         <motion.div
           style={{
             y: jungle1,
-            backgroundImage: 'url("./src/assets/jungle1.png")',
             backgroundPosition: "bottom",
             backgroundSize: "cover",
           }}
-          className="absolute inset-0 z-[4] h-screen w-full"
+          className="absolute inset-0 z-[4] h-screen w-full bg-jungle1 bg-no-repeat"
         ></motion.div>
         <motion.div
           style={{
             y: jungle2,
-            backgroundImage: 'url("./src/assets/jungle2.png")',
             backgroundPosition: "bottom",
             backgroundSize: "cover",
           }}
-          className="absolute inset-0 z-[5] w-full"
+          className="absolute inset-0 z-[5] w-full bg-jungle2 bg-no-repeat"
         ></motion.div>
         <motion.div
           style={{
             y: jungle3,
-            backgroundImage: 'url("./src/assets/jungle3.png")',
             backgroundPosition: "bottom",
             backgroundSize: "cover",
           }}
-          className="absolute inset-0 z-[6] w-full"
+          className="absolute inset-0 z-[6] w-full bg-jungle3 bg-no-repeat"
         ></motion.div>
         <motion.div
           style={{
             y: jungle4,
-            backgroundImage: 'url("./src/assets/jungle4.png")',
             backgroundPosition: "bottom",
             backgroundSize: "cover",
           }}
-          className="absolute inset-0 z-[7] w-full"
+          className="absolute inset-0 z-[7] w-full bg-jungle4 bg-no-repeat"
         ></motion.div>
         <motion.div
           style={{
             y: jungle5,
-            backgroundImage: 'url("./src/assets/jungle5.png")',
             backgroundPosition: "bottom",
             backgroundSize: "cover",
           }}
-          className="absolute inset-0 z-[8] w-full"
+          className="absolute inset-0 z-[8] w-full bg-jungle5 bg-no-repeat"
         ></motion.div>
         <motion.div
           style={{
             y: man,
-            backgroundImage: 'url("./src/assets/man_on_mountain.png")',
             backgroundPosition: "bottom",
             backgroundSize: "cover",
           }}
-          className="absolute inset-0 z-[9] w-full"
+          className="absolute inset-0 z-[9] w-full bg-man bg-no-repeat"
         ></motion.div>
       </div>
       <div className="bold relative z-[10] flex h-screen w-full flex-col items-center justify-center gap-4 bg-gradient-to-r from-[#280003] to-[#210002] text-4xl text-[#FFAF1B] md:text-6xl">

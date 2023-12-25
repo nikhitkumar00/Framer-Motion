@@ -12,6 +12,7 @@ export default {
         logo: "url('./src/assets/logo_land.png')",
         man: "url('./src/assets/man_on_mountain.png')",
         mountain: "url('./src/assets/mountains.png')",
+        background: "url('./src/assets/background.png')",
       },
     },
   },
