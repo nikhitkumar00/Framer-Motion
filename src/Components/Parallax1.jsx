@@ -8,8 +8,8 @@ function Parallax1() {
     offset: ["start start", "end start"],
   });
 
-  const background = useTransform(scrollYProgress, [0, 1], ["-28%", "110%"]);
-  const mountain = useTransform(scrollYProgress, [0, 1], ["-22%", "105%"]);
+  const background = useTransform(scrollYProgress, [0, 1], ["-28%", "150%"]);
+  const mountain = useTransform(scrollYProgress, [0, 1], ["-22%", "110%"]);
   const jungle1 = useTransform(scrollYProgress, [0, 1], ["-20%", "90%"]);
   const jungle2 = useTransform(scrollYProgress, [0, 1], ["-18%", "85%"]);
   const jungle3 = useTransform(scrollYProgress, [0, 1], ["-12%", "80%"]);
