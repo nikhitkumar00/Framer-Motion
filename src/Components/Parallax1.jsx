@@ -8,6 +8,7 @@ function Parallax1() {
     offset: ["start start", "end start"],
   });
 
+  // parallax speed
   const background = useTransform(scrollYProgress, [0, 1], ["-28%", "150%"]);
   const mountain = useTransform(scrollYProgress, [0, 1], ["-22%", "110%"]);
   const jungle1 = useTransform(scrollYProgress, [0, 1], ["-20%", "90%"]);
@@ -18,9 +19,11 @@ function Parallax1() {
   const man = useTransform(scrollYProgress, [0, 1], ["5%", "25%"]);
 
   return (
-    <div ref={refference} className="bg-[#FFAF1B]">
-      <div className="relative z-[2] bold flex h-[10vh] w-full flex-col items-center justify-center gap-4 text-4xl text-[#DE711D]  md:h-60 md:text-6xl">
-        <span>SCROLL</span>
+    <div id="top" ref={refference} className="bg-[#FFAF1B]">
+      <div className="bold relative z-[2] flex h-[10vh] w-full flex-col items-center justify-center gap-4 text-4xl text-[#DE711D]  md:h-60 md:text-6xl">
+        <span>
+          <a href="#bottom">SCROLL</a>
+        </span>
         <svg
           className="w-10 animate-bounce fill-[#DE711D]"
           viewBox="0 0 24 24"
@@ -109,8 +112,13 @@ function Parallax1() {
           className="absolute inset-0 z-[9] w-full bg-man bg-no-repeat"
         ></motion.div>
       </motion.div>
-      <div className="bold relative z-[10] flex h-screen w-full flex-col items-center justify-center gap-4 bg-gradient-to-r from-[#280003] to-[#210002] text-4xl text-[#FFAF1B] md:text-6xl">
-        <span>SCROLL UP</span>
+      <div
+        id="bottom"
+        className="bold relative z-[10] flex h-screen w-full flex-col items-center justify-center gap-4 bg-gradient-to-r from-[#280003] to-[#210002] text-4xl text-[#FFAF1B] md:text-6xl"
+      >
+        <span>
+          <a href="#top">SCROLL UP</a>
+        </span>
         <div className="flex gap-2">
           <a
             href="https://nikhitkumar.netlify.app/"
