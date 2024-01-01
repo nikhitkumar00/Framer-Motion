@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c17c8649-33e8-4118-86f9-c89a876414e4/deploy-status)](https://app.netlify.com/sites/parallaxnikhit/deploys)
+
 # Framer Motion Project
 
 This project is a showcase of the power of combining React, Vite, and Framer Motion. 
