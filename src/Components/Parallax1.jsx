@@ -21,7 +21,7 @@ function Parallax1() {
   return (
     <div id="top" ref={refference} className="bg-[#FFAF1B]">
       <div className="bold relative z-[2] flex h-[10vh] w-full flex-col items-center justify-center gap-4 text-4xl text-[#DE711D]  md:h-60 md:text-6xl">
-        <span>
+        <span className="relative z-[9999] cursor-pointer transition-all hover:scale-110">
           <a href="#bottom">SCROLL</a>
         </span>
         <svg
