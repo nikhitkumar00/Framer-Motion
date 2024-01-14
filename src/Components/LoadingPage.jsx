@@ -4,18 +4,20 @@ const LoadingPage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const delay = setTimeout(() => {
+    const handleLoad = () => {
       setLoading(false);
-    }, 2000);
+    };
 
-    return () => clearTimeout(delay);
+    window.addEventListener("load", handleLoad);
+
+    return () => window.removeEventListener("load", handleLoad);
   }, []);
 
-  if (!loading) return;
+  if (!loading) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] animate-pulse flex h-screen w-screen items-center justify-center bg-[#FFAF1B] text-6xl text-[#DE711D]">
-      LoadingPage
+    <div className="fixed inset-0 z-[9999] flex h-screen w-screen items-center justify-center bg-[#FFAF1B] text-6xl text-[#DE711D]">
+      <span className="animate-pulse">LoadingPage</span>
     </div>
   );
 };
